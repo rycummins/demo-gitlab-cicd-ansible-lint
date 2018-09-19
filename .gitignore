@@ -1,3 +1,4 @@
 *.retry
+.vagrant/
 roles/geerlingguy.gitlab
 roles/riemers.gitlab-runner
