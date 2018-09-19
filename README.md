@@ -1,6 +1,8 @@
 # Demo: GitLab CI/CD - Ansible Lint
 This project provides an environment to demonstrate a basic GitLab CI/CD pipeline for Ansible playbook linting.
 
+GitLab URL: [https://172.16.2.50/](https://172.16.2.50/)
+
 ### Requirements
 * Vagrant (tested on v2.1.5)
 * VirtualBox (tested on v5.2.18)
