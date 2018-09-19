@@ -1,0 +1,18 @@
+---
+# tasks file for copy-gitlab-ssl
+
+- name: create certs subdir on gitlab-runner vm
+  file:
+    path: /etc/gitlab-runner/certs
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: copy cert file to gitlab-runner vm
+  copy:
+    src: /tmp/gitlab/etc/gitlab/ssl/gitlab.crt
+    dest: /etc/gitlab-runner/certs/gitlab.crt
+    owner: root
+    group: root
+    mode: 0644

@@ -1,0 +1,3 @@
+*.retry
+roles/geerlingguy.gitlab
+roles/riemers.gitlab-runner

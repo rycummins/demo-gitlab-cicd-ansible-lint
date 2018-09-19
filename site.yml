@@ -1,0 +1,14 @@
+---
+- name: Provision Demo Environment
+  hosts: all
+  become: true
+  vars_files:
+    - vars/main.yml
+
+  roles:
+    - role: hosts-file
+    - { role: geerlingguy.gitlab, when: "'tag_Name_gitlab' in group_names" }
+    - { role: get-gitlab-ssl, when: "'tag_Name_gitlab' in group_names" }
+    - { role: riemers.gitlab-runner, when: "'tag_Name_gitlab-runner' in group_names" }
+    - { role: ansible-lint, when: "'tag_Name_gitlab-runner' in group_names" }
+    - { role: copy-gitlab-ssl, when: "'tag_Name_gitlab-runner' in group_names" }
