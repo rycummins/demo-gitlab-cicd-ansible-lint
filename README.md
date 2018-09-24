@@ -5,6 +5,7 @@ GitLab URL: [https://172.16.2.50/](https://172.16.2.50/)
 
 ### Requirements
 * Vagrant (tested on v2.1.5)
+
 ** Vagrant [https://github.com/devopsgroup-io/vagrant-hostmanager](hostmanager) plugin
 * VirtualBox (tested on v5.2.18)
 * Ansible (tested on v2.6.4)
